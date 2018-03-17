@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+ifconfig en0 | grep 'ether ' | cut -c8-24

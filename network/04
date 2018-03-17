@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+netstat -nr | grep 'default' | head -1 | cut -c20-33

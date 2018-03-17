@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+ifconfig -a | grep '^\S*:' | egrep -o '^[^:]+'

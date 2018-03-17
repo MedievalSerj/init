@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+ifconfig en0 | grep 'inet ' | egrep -o 'inet [0123456789.]+' | cut -c 6-
