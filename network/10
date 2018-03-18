@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+traceroute slash16.org 2&>/dev/null

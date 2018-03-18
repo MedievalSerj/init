@@ -1,0 +1,9 @@
+# Use nslookup to resolve host name
+
+nslookup 10.51.1.253
+Server:		10.51.1.253
+Address:	10.51.1.253#53
+
+253.1.51.10.in-addr.arpa	name = ns1.unit.ua.
+
+# 10.51.1.253 - happens to be local DNS server ;)
