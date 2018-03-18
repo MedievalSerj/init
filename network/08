@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+# Use WHOIS network protocol to retrieve domain name owner and maintainer info
+
+whois slash16.org | egrep 'Tech Name'
+
+# Google for "Hostmaster Online SAS" and find their website:
+# https://www.online.net/fr

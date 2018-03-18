@@ -1,0 +1,7 @@
+#!/bin/zsh
+
+# using 05 script find dns server address
+cmd=$(zsh ./05)
+
+# search in /etc folder (which contains config files) for the file containing dns server address
+grep -r "$cmd" /etc 2&>/dev/null
