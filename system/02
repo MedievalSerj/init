@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+# usage: ./02 new_hostname
+
+hostname ${1}

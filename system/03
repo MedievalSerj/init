@@ -1,0 +1,4 @@
+# To permanently change hostname:
+# 1. Find current hostname
+# 2. Put a new hostname to /etc/hostname
+# 3. Replace an old hostname with a new one in the file /etc/hosts

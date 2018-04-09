@@ -1,0 +1,10 @@
+version: "3.2"
+services:
+
+  debian:
+    image: my_deb:latest
+
+    volumes:
+      - type: volume
+        source: .
+        target: /init
