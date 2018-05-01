@@ -1,0 +1,4 @@
+# run "crontab -e"
+# append file in the format:
+# "m h  dom mon dow   command"
+# to create scheduled task

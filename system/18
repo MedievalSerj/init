@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo iptables -A INPUT -s 10.112.0.0/16 -j ACCEPT
+sudo iptables -A OUTPUT -s 10.112.0.0/16 -j ACCEPT
