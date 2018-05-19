@@ -2,4 +2,4 @@
 
 # usage: ./02 new_hostname
 
-sudo hostname ${1}
+hostname ${1}
