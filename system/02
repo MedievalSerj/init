@@ -1,5 +1,5 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 # usage: ./02 new_hostname
 
-hostname ${1}
+sudo hostname ${1}

@@ -1,23 +1,18 @@
 #!/bin/bash
 
-script_file=update_upgrade.sh
 logs_file=/var/log/update_script.log
-
-touch $script_file
-
-tee $script_file <<FUCK
-#!/bin/bash
+this_script_paht=`readlink -f $0`
+crontab_line="0 4 * * 0 ${this_script_paht}"
+line_in_crontab_file=`crontab -l | grep -F "$crontab_line"`
 
 function update_upgrade() {
   sudo apt-get update 2>&1 >> $logs_file
   sudo apt-get upgrade 2>&1 >> $logs_file
 }
 
+if [ -z "$line_in_crontab_file" ] ; then
+  echo "$crontab_line" | crontab -
+  echo 'Crontab job added'
+fi
+
 update_upgrade
-FUCK
-
-chmod 777 $script_file
-
-script_path=$(readlink -f $script_file)
-
-(crontab -l ; echo "0 4 * * * $script_path")| crontab -
