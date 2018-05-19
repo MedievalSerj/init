@@ -1,8 +1,3 @@
-#!/bin/zsh
-
-# Use WHOIS network protocol to retrieve domain name owner and maintainer info
-
-whois slash16.org | egrep 'Tech Name'
-
-# Google for "Hostmaster Online SAS" and find their website:
-# https://www.online.net/fr
+# Use https://hostadvice.com/tools/whois web service to find
+# out the provider name:
+# Amazon Web Services (AWS)

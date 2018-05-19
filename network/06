@@ -1,7 +1,9 @@
 #!/bin/zsh
 
 # using 05 script find dns server address
-cmd=$(zsh ./05)
+# cmd=$(zsh ./05)
 
 # search in /etc folder (which contains config files) for the file containing dns server address
-grep -r "$cmd" /etc 2&>/dev/null
+# grep -r "$cmd" /etc 2&>/dev/null
+
+# the output is: /etc/resolv.conf:nameserver 10.51.1.253

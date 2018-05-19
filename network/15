@@ -1,7 +1,4 @@
-#!/bin/zsh
-
-# on Mac OS & Linux local DNS entries are described in /etc/host file
+# Mac OS & Linux local DNS entries are described in /etc/host file
 # We can find it knowing that this file is supposed to resolve
 # the "localhost"
-
-grep -r '127.0.0.1 localhost' /etc 2&>/dev/null
+# grep -r '127.0.0.1 localhost' /etc 2&>/dev/null
